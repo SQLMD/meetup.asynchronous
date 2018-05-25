@@ -1,0 +1,30 @@
+{
+  "name": "meetup.asynchronous",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha --reporter nyan && yarn lint",
+    "lint": "eslint --fix --ext .js .",
+    "more": "open newAPI/payment-training/index.html"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-problems": "^0.1.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.14.3",
+    "mocha": "^5.1.1",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.4.1",
+    "async": "^2.6.0",
+    "await": "^0.2.6"
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "document": true
+    }
+  }
+}

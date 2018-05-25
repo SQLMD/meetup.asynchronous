@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A PaymentRequest demo">
+    <meta name="theme-color" content="#f4f2ff">
+    <title>PaymentRequestAPI tester</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+</head>
+
+<body>
+    <h1>Payment Demo</h1>
+    <h2>A simple example of the
+        <a href="https://www.w3.org/TR/payment-request/">Payment Request API</a>
+    </h2>
+    <div id="donate">
+        <p>You don't need to input your real credit card information.
+            <a href="http://www.cybersource.com/developers/other_resources/quick_references/test_cc_numbers/">example card numbers</a>.</p>
+        <button id="donate-button">Click here to test!</button>
+        <p id="success">Success! we succeeded the paymnet!</p>
+        <p id="error">Error... we failed the payment process...</p>
+    </div>
+    <div id="unsupported">
+        <p class="warning">Unfortunately, your browser does not support the Payment Request API.</p>
+    </div>
+    <script type="text/javascript" src="payment.js"></script>
+</body>
+
+</html>
